@@ -81,9 +81,10 @@ The dataset contains anonymized retail transactions with the following columns:
 
 ## Key Findings
 
-* **Sales** is the strongest driver of profit (Profit ↔ Sales correlation ≈ 0.97).
-* **Quantity** has a positive but weaker relationship with profit.
-* **Discount** negatively impacts profit margins.
+* **Sales** is the strongest driver of profit. Among profitable orders (8,058 of 9,994), the Profit ↔ Sales correlation is ≈ 0.88; across all orders it is ≈ 0.48.
+* **Quantity** shows almost no linear relationship with profit (correlation ≈ 0.00).
+* **Discount** hurts profit. Loss-making orders (19% of all orders) carry an average discount of 48%, vs 8% on profitable orders (Profit ↔ Discount correlation ≈ -0.22 across all orders).
+* **Note on scope:** the model is fit on profitable orders only, which leaves out the loss-making orders where discounts do the most damage.
 * Raw category codes show minimal linear effect—recommend segment-specific modeling.
 
 ## Forecasting Approach
